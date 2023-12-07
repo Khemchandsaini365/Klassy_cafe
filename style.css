@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6em;
+    position: sticky;
+    background-color: #fff;
+    min-width: 950px;
+
+}
+
+header ul {
+    list-style: none;
+
+}
+
+#box-2>ul>li {
+    float: left;
+    font-weight: 600;
+    margin: 1em;
+    font-family: sans-serif;
+}
+
+#box-2 {
+    margin-right: 8em;
+}
+
+#box-2>ul>li:hover {
+    color: tomato;
+}
+
+#box-1 {
+    padding-left: 5em;
+}
+
+.carousel {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    min-width: 950px;
+
+}
+
+#slider-1 {
+    width: 32%;
+    background: url('./images/top-left-bg.jpg');
+
+}
+
+#slider-1>img {
+    height: 100%;
+    width: 100%;
+}
+
+#slider-2 {
+    width: 68%;
+}
+
+#slider-2>img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+}
+
+.h4_font {
+    font-family: 'Dancing Script', cursive;
+    ;
+    font-size: 54px;
+    font-weight: 700;
+    color: white;
+}
+
+.h6_font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+}
+
+.reservation {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+#resver_btn {
+    height: 3em;
+    width: 13em;
+    font-size: 15px;
+    font-weight: 600;
+    color: tomato;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#about {
+    height: 80vh;
+    width: 98vw;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px 5%;
+}
+
+.about_left {
+
+    height: 100%;
+    width: 50%;
+    line-height: 2;
+
+}
+
+.img_row {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.img_row>img {
+    border-radius: 10px;
+}
+
+.about_right {
+
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_right>img {
+    width: 90%;
+    height: 90%;
+}
+
+.menu_font {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu {
+    height: 85vh;
+    width: 98vw;
+    box-sizing: border-box;
+    padding: 10px 5%;
+    line-height: 2;
+}
+
+.foods>div>img {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.foods h6 {
+    background: tomato;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 59px;
+
+}
+
+.foods>div {
+    width: 18%;
+    height: 90%;
+    position: relative;
+    top: -50px;
+}
+
+@media (max-width:400px) {
+    #slider-1{
+        display: block;
+    }
+}
+.menu_imgs{
+
+    overflow: hidden;
+}
+
+.info {
+    height: 50%;
+    width: 100%;
+    background-color: tomato;
+    position: absolute;
+    top: 300px;
+    
+    
+
+}
+
+.menu_imgs:hover .info {
+
+    transform: translateY(-60%);
+    transition: transform 1s ease-out;
+
+}
+
+.foods {
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+#our_chefs {
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 5%;
+    line-height: 2;
+    margin: 50px 0;
+}
+
+.top h6 {
+    font-size: 16px;
+    color: tomato;
+}
+
+.top h2 {
+    font-size: 30px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chefs {
+    height: 70vh;
+    width: 30%;
+    border: 1px solid gainsboro;
+
+
+}
+
+.chefs img {
+    width: 100%;
+    height: 75%;
+}
+
+.chefs img:hover {
+    filter: grayscale(100%);
+    border: 2px solid tomato;
+}
+
+.chef_info {
+    font-size: 20px;
+    text-align: center;
+}
+
+.reservation_form {
+    display: flex;
+    background: url(./images/reservation-bg.jpg);
+    padding: 80px 5%;
+    line-height: 2;
+    margin: 50px 0;
+    height: 100vh;
+    color: white;
+    justify-content: space-between;
+}
+
+#box_1 {
+    width: 45%;
+}
+
+#box_2 {
+    width: 45%;
+    border-radius: 5px;
+}
+
+.line {
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    position: relative;
+
+}
+
+.line::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: #fff;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+/* h6 {
+    font-family: sans-serif;
+    margin: 100px auto;
+    color: #228B22;
+    font-size: 30px;
+    position: relative;
+  }
+  
+  h6:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #000;
+    left: 0;
+    top: 50%;
+    position: absolute;
+  } */
+.down {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.phone {
+    text-align: center;
+    background-color: white;
+    width: 45%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.phone i {
+    color: white;
+    position: relative;
+    top: 10px;
+}
+
+.phone div {
+    background: tomato;
+    border-radius: 50px;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    top: -25px;
+    left: 38%;
+
+}
+
+.phone h4 {
+    color: black;
+}
+
+#box_2 {
+    background-color: white;
+}
+
+form div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px;
+
+}
+
+form {
+    box-sizing: border-box
+}
+
+#message {
+    width: 92%;
+    height: 6em;
+    margin: 10px 20px;
+}
+
+.btn_2 {
+    height: 3em;
+    width: 93%;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: tomato;
+    margin: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#week {
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foodlist {
+    width: 98vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 2%;
+}
+
+.f_itms {
+    width: 100%;
+    height: 100x;
+    display: grid;
+    grid-template-columns: 20% 50% 20%;
+    gap: 5%;
+}
+
+.f_itms_in {
+    height: 50%;
+}
+
+.price {
+    background-color: tomato;
+    border-radius: 5px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    background-color: tomato;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 24vh;
+    width: 98vw;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+
+}
+.social-icons li{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background-color: white;
+    margin: 0 10px;
+
+}
+.social-icons li a{
+    position: relative;
+    top: 4px;
+    left: 8px;
+}
+#itm_3{
+    color: white;
+    text-align: right;
+    margin-right: 20px;
+}
