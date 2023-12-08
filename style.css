@@ -9,11 +9,15 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 6em;
-    position: sticky;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100vw;
     background-color: #fff;
     min-width: 950px;
 
 }
+
 
 header ul {
     list-style: none;
@@ -46,6 +50,16 @@ header ul {
     min-width: 950px;
 
 }
+@media (max-width:400px) {
+    .carousel {
+        display: block;
+        width: 100%;
+    }  
+    .slider{
+        width: 100%;
+        display: block;
+    }
+} 
 
 #slider-1 {
     width: 32%;
@@ -121,6 +135,22 @@ header ul {
     height: 100%;
     width: 50%;
     line-height: 2;
+    position: relative;
+
+}
+.p1{
+    padding-left: 40px;
+    color: tomato;
+}
+.p1::before{
+}
+.about_left>p:before{
+    content: '';
+    width: 30px;
+    border-bottom: solid 1px #f10000;
+    position: absolute;
+    left: 0;
+    top: 15px;
 
 }
 
@@ -161,6 +191,16 @@ header ul {
     box-sizing: border-box;
     padding: 10px 5%;
     line-height: 2;
+    position: relative;
+}
+#menu>.p1::before{
+    content: '';
+    width: 30px;
+    border-bottom: solid 1px #f10000;
+    position: absolute;
+    left: 70px;
+    top: 26px;
+ 
 }
 
 .foods>div>img {
@@ -186,7 +226,7 @@ header ul {
 }
 
 @media (max-width:400px) {
-    #slider-1{
+    .slider{
         display: block;
     }
 }
@@ -200,7 +240,7 @@ header ul {
     width: 100%;
     background-color: tomato;
     position: absolute;
-    top: 300px;
+    top: 350px;
     
     
 
@@ -232,10 +272,16 @@ header ul {
     line-height: 2;
     margin: 50px 0;
 }
-
-.top h6 {
-    font-size: 16px;
-    color: tomato;
+.top{
+    position: relative;
+}
+.top>.p1::before {
+    content: '';
+    width: 30px;
+    position: absolute;
+    top: 18px;
+    left: 5px;
+    border-bottom: 1px solid tomato;
 }
 
 .top h2 {
@@ -273,20 +319,17 @@ header ul {
 .reservation_form {
     display: flex;
     background: url(./images/reservation-bg.jpg);
-    padding: 80px 5%;
-    line-height: 2;
-    margin: 50px 0;
-    height: 100vh;
+    padding: 80px;
     color: white;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #box_1 {
-    width: 45%;
+    width: 40%;
 }
 
 #box_2 {
-    width: 45%;
+    width: 40%;
     border-radius: 5px;
 }
 
@@ -366,22 +409,33 @@ header ul {
     background-color: white;
 }
 
-form div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin: 20px;
 
+
+form div input {
+     
+    padding: 10px;
+    margin: 5px 20px;
+    width: 40%;
+
+}
+
+form div select{
+
+    padding: 10px;
+    margin: 5px 20px;
+    width: 40%;
 }
 
 form {
     box-sizing: border-box
 }
 
-#message {
-    width: 92%;
-    height: 6em;
-    margin: 10px 20px;
+.area{
+
+    margin: 4px 20px;
+    padding: 10px;
+    
+
 }
 
 .btn_2 {
@@ -464,9 +518,51 @@ form {
     position: relative;
     top: 4px;
     left: 8px;
+    color: tomato;
 }
 #itm_3{
     color: white;
     text-align: right;
     margin-right: 20px;
+}
+
+.bar{
+
+    display: none;
+}
+
+@media (max-width:700px) {
+ 
+    .box ul{
+
+        display: none;
+    }
+
+    .bar{
+
+        display: block;
+        font-size: 35px;
+    }
+
+    .carousel{
+
+        display: block;
+       
+    }
+
+      #slider-1{
+
+        width: 100%;
+        height: 50%;
+        
+     }
+
+     #slider-2{
+
+        width: 100%;
+        height: 50%;
+        
+     } 
+
+    
 }
